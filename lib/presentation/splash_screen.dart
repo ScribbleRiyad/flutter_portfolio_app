@@ -1,10 +1,11 @@
 import 'dart:async';
+import 'package:auto_route/auto_route.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:portfolio_app/presentation/home.dart';
 
 
-
+@RoutePage() 
 class SplashScreen extends StatefulWidget {
   const SplashScreen({Key? key}) : super(key: key);
 

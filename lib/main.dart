@@ -1,17 +1,18 @@
 import 'package:flutter/material.dart';
-import 'package:portfolio_app/splash_screen.dart';
+import 'route/route_import.dart';
 
-void main() => runApp(const MyPortFolioApp());
+void main() => runApp(MyPortFolioApp());
 
 class MyPortFolioApp extends StatelessWidget {
-  const MyPortFolioApp({super.key});
-
+   MyPortFolioApp({super.key});
+final _appRouter = AppRouter();
+ 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
-      debugShowCheckedModeBanner: false,
+    return MaterialApp.router(            
+      routerConfig: _appRouter.config(),
+        debugShowCheckedModeBanner: false,
     
-      home: SplashScreen()
     
     );
   }
